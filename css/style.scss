@@ -1,0 +1,150 @@
+:root {
+    --bg-color: black;
+  }
+  
+  body {
+    background: var(--bg-color);
+    background-size: cover;
+    height: 100%;
+  }
+  $width:11px;
+  $height:$width*7;
+  $n:70;
+  $t:40s;
+  $gap:9px;
+  #dna {
+    width: (2 + $gap*2) * $n;
+    height: $height;
+    transform-style: preserve-3d;
+    //transform:rotateZ(90deg);
+  }
+  .containerLine{
+  
+  }
+  .line{
+    width: 1px;
+    height: $height/2;
+    float: left;
+    margin: 0 $gap;
+    border-left: 2px #B0B0B0 solid;
+    position: absolute;
+    top: 105%;
+    cursor:pointer;
+  }
+  .lineP{
+    word-wrap: break-word;
+    position: absolute;
+    color:white;
+    top: 160%;
+    cursor:pointer;
+  }
+  @media only screen and (max-width: 600px) {
+    #dna {
+      transform:rotateZ(90deg) translateX(100%);
+          position: absolute;
+          top: 0;
+    }
+    .lineP{
+      transform:rotateZ(-90deg);
+      margin-right:5px;
+    }
+  }
+  div.special{
+    &:before,&:after {
+      //background:  radial-gradient(circle at 10px               0px, red, white) !important;
+      animation:run3 3s linear infinite !important;
+  }
+  }
+  div.special2{
+    &:before,&:after {
+      animation-play-state:paused;
+  }
+  }
+  .ele {
+    width: 1px;
+    height: run2 10s linear infinite;
+    float: left;
+    margin: 0 $gap;
+    border-left: 1px white solid;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-360deg);
+    animation: run 10s linear infinite;
+    &:before,
+    &:after {
+      content: '';
+      width: $width;
+      height: $width;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      transform-style: preserve-3d;
+      transform: rotateX(-60deg);
+      animation: run2 10s linear infinite;
+      z-index: 1;
+                    background: radial-gradient(circle at 5px               5px, white, #B8B8B8);
+    }
+    &:before {
+      top: -2px;
+    }
+    &:after {
+      bottom: -2px;
+    }
+    @for $i from 1 through $n {
+      &:nth-of-type(#{$i}):after,&:nth-of-type(#{$i}):before {
+        animation-delay: $t/$n*$i*-1;}
+      &:nth-of-type(#{$i}) {
+        animation-delay: $t/$n*$i*-1;
+            @if $i==4 or $i==14 or $i==24 or $i==34 or $i==44 or $i==54{cursor:pointer;
+              animation-delay: ($t)/$n*($i - 1)*-1;
+              &:before {
+                top: 13px;
+                left: -10px;
+                width: 20px;
+                animation:none;
+                height: 40px;
+                display: block;
+                border-radius: 50%;
+                margin: 0;
+                background: radial-gradient(circle at 10px               10px, white, #B8B8B8);
+              }
+              &:after {
+                width: 0;
+                height: 0;
+              }
+              &:nth-of-type(#{$i}){
+                animation:none;
+                width: 0;
+                height: 0;
+              }
+        }
+      }
+    }
+  }
+  @keyframes run {
+    to{transform:none}
+  }
+  @keyframes run2 {
+          from {
+                  transform: translateX(-50%) rotateX(0deg);
+          }
+          to {
+        transform: translateX(-50%) rotateX(-360deg);
+          }
+  }
+  
+  @keyframes run3 {
+    @for $i from 0 through 200 {
+      @if $i<=100{
+      #{$i * 0.5%} {
+        background: radial-gradient(circle at 8px 55-(0.5*$i)+0px, white, red);
+        } }
+        @if $i>100{
+      #{$i * 0.5%} {
+        background: radial-gradient(circle at 8px 0+(0.5*($i+ -99))+0px , white, red);
+        } }
+    }
+  }
+  
+  

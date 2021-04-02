@@ -1,0 +1,2217 @@
+:root {
+  --bg-color: black;
+}
+
+body {
+  background: var(--bg-color);
+  background-size: cover;
+  height: 100%;
+}
+
+#dna {
+  width: 1400px;
+  height: 77px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.line {
+  width: 1px;
+  height: 38.5px;
+  float: left;
+  margin: 0 9px;
+  border-left: 2px #B0B0B0 solid;
+  position: absolute;
+  top: 105%;
+  cursor: pointer;
+}
+
+.lineP {
+  word-wrap: break-word;
+  position: absolute;
+  color: white;
+  top: 160%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  #dna {
+    -webkit-transform: rotateZ(90deg) translateX(100%);
+            transform: rotateZ(90deg) translateX(100%);
+    position: absolute;
+    top: 0;
+  }
+  .lineP {
+    -webkit-transform: rotateZ(-90deg);
+            transform: rotateZ(-90deg);
+    margin-right: 5px;
+  }
+}
+
+div.special:before, div.special:after {
+  -webkit-animation: run3 3s linear infinite !important;
+          animation: run3 3s linear infinite !important;
+}
+
+div.special2:before, div.special2:after {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.ele {
+  width: 1px;
+  height: run2 10s linear infinite;
+  float: left;
+  margin: 0 9px;
+  border-left: 1px white solid;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-360deg);
+          transform: rotateX(-360deg);
+  -webkit-animation: run 10s linear infinite;
+          animation: run 10s linear infinite;
+}
+
+.ele:before, .ele:after {
+  content: '';
+  width: 11px;
+  height: 11px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-60deg);
+          transform: rotateX(-60deg);
+  -webkit-animation: run2 10s linear infinite;
+          animation: run2 10s linear infinite;
+  z-index: 1;
+  background: radial-gradient(circle at 5px 5px, white, #B8B8B8);
+}
+
+.ele:before {
+  top: -2px;
+}
+
+.ele:after {
+  bottom: -2px;
+}
+
+.ele:nth-of-type(1):after, .ele:nth-of-type(1):before {
+  -webkit-animation-delay: -0.57143s;
+          animation-delay: -0.57143s;
+}
+
+.ele:nth-of-type(1) {
+  -webkit-animation-delay: -0.57143s;
+          animation-delay: -0.57143s;
+}
+
+.ele:nth-of-type(2):after, .ele:nth-of-type(2):before {
+  -webkit-animation-delay: -1.14286s;
+          animation-delay: -1.14286s;
+}
+
+.ele:nth-of-type(2) {
+  -webkit-animation-delay: -1.14286s;
+          animation-delay: -1.14286s;
+}
+
+.ele:nth-of-type(3):after, .ele:nth-of-type(3):before {
+  -webkit-animation-delay: -1.71429s;
+          animation-delay: -1.71429s;
+}
+
+.ele:nth-of-type(3) {
+  -webkit-animation-delay: -1.71429s;
+          animation-delay: -1.71429s;
+}
+
+.ele:nth-of-type(4):after, .ele:nth-of-type(4):before {
+  -webkit-animation-delay: -2.28571s;
+          animation-delay: -2.28571s;
+}
+
+.ele:nth-of-type(4) {
+  -webkit-animation-delay: -2.28571s;
+          animation-delay: -2.28571s;
+  cursor: pointer;
+  -webkit-animation-delay: -1.71429s;
+          animation-delay: -1.71429s;
+}
+
+.ele:nth-of-type(4):before {
+  top: 13px;
+  left: -10px;
+  width: 20px;
+  -webkit-animation: none;
+          animation: none;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  margin: 0;
+  background: radial-gradient(circle at 10px 10px, white, #B8B8B8);
+}
+
+.ele:nth-of-type(4):after {
+  width: 0;
+  height: 0;
+}
+
+.ele:nth-of-type(4):nth-of-type(4) {
+  -webkit-animation: none;
+          animation: none;
+  width: 0;
+  height: 0;
+}
+
+.ele:nth-of-type(5):after, .ele:nth-of-type(5):before {
+  -webkit-animation-delay: -2.85714s;
+          animation-delay: -2.85714s;
+}
+
+.ele:nth-of-type(5) {
+  -webkit-animation-delay: -2.85714s;
+          animation-delay: -2.85714s;
+}
+
+.ele:nth-of-type(6):after, .ele:nth-of-type(6):before {
+  -webkit-animation-delay: -3.42857s;
+          animation-delay: -3.42857s;
+}
+
+.ele:nth-of-type(6) {
+  -webkit-animation-delay: -3.42857s;
+          animation-delay: -3.42857s;
+}
+
+.ele:nth-of-type(7):after, .ele:nth-of-type(7):before {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+
+.ele:nth-of-type(7) {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+
+.ele:nth-of-type(8):after, .ele:nth-of-type(8):before {
+  -webkit-animation-delay: -4.57143s;
+          animation-delay: -4.57143s;
+}
+
+.ele:nth-of-type(8) {
+  -webkit-animation-delay: -4.57143s;
+          animation-delay: -4.57143s;
+}
+
+.ele:nth-of-type(9):after, .ele:nth-of-type(9):before {
+  -webkit-animation-delay: -5.14286s;
+          animation-delay: -5.14286s;
+}
+
+.ele:nth-of-type(9) {
+  -webkit-animation-delay: -5.14286s;
+          animation-delay: -5.14286s;
+}
+
+.ele:nth-of-type(10):after, .ele:nth-of-type(10):before {
+  -webkit-animation-delay: -5.71429s;
+          animation-delay: -5.71429s;
+}
+
+.ele:nth-of-type(10) {
+  -webkit-animation-delay: -5.71429s;
+          animation-delay: -5.71429s;
+}
+
+.ele:nth-of-type(11):after, .ele:nth-of-type(11):before {
+  -webkit-animation-delay: -6.28571s;
+          animation-delay: -6.28571s;
+}
+
+.ele:nth-of-type(11) {
+  -webkit-animation-delay: -6.28571s;
+          animation-delay: -6.28571s;
+}
+
+.ele:nth-of-type(12):after, .ele:nth-of-type(12):before {
+  -webkit-animation-delay: -6.85714s;
+          animation-delay: -6.85714s;
+}
+
+.ele:nth-of-type(12) {
+  -webkit-animation-delay: -6.85714s;
+          animation-delay: -6.85714s;
+}
+
+.ele:nth-of-type(13):after, .ele:nth-of-type(13):before {
+  -webkit-animation-delay: -7.42857s;
+          animation-delay: -7.42857s;
+}
+
+.ele:nth-of-type(13) {
+  -webkit-animation-delay: -7.42857s;
+          animation-delay: -7.42857s;
+}
+
+.ele:nth-of-type(14):after, .ele:nth-of-type(14):before {
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
+}
+
+.ele:nth-of-type(14) {
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
+  cursor: pointer;
+  -webkit-animation-delay: -7.42857s;
+          animation-delay: -7.42857s;
+}
+
+.ele:nth-of-type(14):before {
+  top: 13px;
+  left: -10px;
+  width: 20px;
+  -webkit-animation: none;
+          animation: none;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  margin: 0;
+  background: radial-gradient(circle at 10px 10px, white, #B8B8B8);
+}
+
+.ele:nth-of-type(14):after {
+  width: 0;
+  height: 0;
+}
+
+.ele:nth-of-type(14):nth-of-type(14) {
+  -webkit-animation: none;
+          animation: none;
+  width: 0;
+  height: 0;
+}
+
+.ele:nth-of-type(15):after, .ele:nth-of-type(15):before {
+  -webkit-animation-delay: -8.57143s;
+          animation-delay: -8.57143s;
+}
+
+.ele:nth-of-type(15) {
+  -webkit-animation-delay: -8.57143s;
+          animation-delay: -8.57143s;
+}
+
+.ele:nth-of-type(16):after, .ele:nth-of-type(16):before {
+  -webkit-animation-delay: -9.14286s;
+          animation-delay: -9.14286s;
+}
+
+.ele:nth-of-type(16) {
+  -webkit-animation-delay: -9.14286s;
+          animation-delay: -9.14286s;
+}
+
+.ele:nth-of-type(17):after, .ele:nth-of-type(17):before {
+  -webkit-animation-delay: -9.71429s;
+          animation-delay: -9.71429s;
+}
+
+.ele:nth-of-type(17) {
+  -webkit-animation-delay: -9.71429s;
+          animation-delay: -9.71429s;
+}
+
+.ele:nth-of-type(18):after, .ele:nth-of-type(18):before {
+  -webkit-animation-delay: -10.28571s;
+          animation-delay: -10.28571s;
+}
+
+.ele:nth-of-type(18) {
+  -webkit-animation-delay: -10.28571s;
+          animation-delay: -10.28571s;
+}
+
+.ele:nth-of-type(19):after, .ele:nth-of-type(19):before {
+  -webkit-animation-delay: -10.85714s;
+          animation-delay: -10.85714s;
+}
+
+.ele:nth-of-type(19) {
+  -webkit-animation-delay: -10.85714s;
+          animation-delay: -10.85714s;
+}
+
+.ele:nth-of-type(20):after, .ele:nth-of-type(20):before {
+  -webkit-animation-delay: -11.42857s;
+          animation-delay: -11.42857s;
+}
+
+.ele:nth-of-type(20) {
+  -webkit-animation-delay: -11.42857s;
+          animation-delay: -11.42857s;
+}
+
+.ele:nth-of-type(21):after, .ele:nth-of-type(21):before {
+  -webkit-animation-delay: -12s;
+          animation-delay: -12s;
+}
+
+.ele:nth-of-type(21) {
+  -webkit-animation-delay: -12s;
+          animation-delay: -12s;
+}
+
+.ele:nth-of-type(22):after, .ele:nth-of-type(22):before {
+  -webkit-animation-delay: -12.57143s;
+          animation-delay: -12.57143s;
+}
+
+.ele:nth-of-type(22) {
+  -webkit-animation-delay: -12.57143s;
+          animation-delay: -12.57143s;
+}
+
+.ele:nth-of-type(23):after, .ele:nth-of-type(23):before {
+  -webkit-animation-delay: -13.14286s;
+          animation-delay: -13.14286s;
+}
+
+.ele:nth-of-type(23) {
+  -webkit-animation-delay: -13.14286s;
+          animation-delay: -13.14286s;
+}
+
+.ele:nth-of-type(24):after, .ele:nth-of-type(24):before {
+  -webkit-animation-delay: -13.71429s;
+          animation-delay: -13.71429s;
+}
+
+.ele:nth-of-type(24) {
+  -webkit-animation-delay: -13.71429s;
+          animation-delay: -13.71429s;
+  cursor: pointer;
+  -webkit-animation-delay: -13.14286s;
+          animation-delay: -13.14286s;
+}
+
+.ele:nth-of-type(24):before {
+  top: 13px;
+  left: -10px;
+  width: 20px;
+  -webkit-animation: none;
+          animation: none;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  margin: 0;
+  background: radial-gradient(circle at 10px 10px, white, #B8B8B8);
+}
+
+.ele:nth-of-type(24):after {
+  width: 0;
+  height: 0;
+}
+
+.ele:nth-of-type(24):nth-of-type(24) {
+  -webkit-animation: none;
+          animation: none;
+  width: 0;
+  height: 0;
+}
+
+.ele:nth-of-type(25):after, .ele:nth-of-type(25):before {
+  -webkit-animation-delay: -14.28571s;
+          animation-delay: -14.28571s;
+}
+
+.ele:nth-of-type(25) {
+  -webkit-animation-delay: -14.28571s;
+          animation-delay: -14.28571s;
+}
+
+.ele:nth-of-type(26):after, .ele:nth-of-type(26):before {
+  -webkit-animation-delay: -14.85714s;
+          animation-delay: -14.85714s;
+}
+
+.ele:nth-of-type(26) {
+  -webkit-animation-delay: -14.85714s;
+          animation-delay: -14.85714s;
+}
+
+.ele:nth-of-type(27):after, .ele:nth-of-type(27):before {
+  -webkit-animation-delay: -15.42857s;
+          animation-delay: -15.42857s;
+}
+
+.ele:nth-of-type(27) {
+  -webkit-animation-delay: -15.42857s;
+          animation-delay: -15.42857s;
+}
+
+.ele:nth-of-type(28):after, .ele:nth-of-type(28):before {
+  -webkit-animation-delay: -16s;
+          animation-delay: -16s;
+}
+
+.ele:nth-of-type(28) {
+  -webkit-animation-delay: -16s;
+          animation-delay: -16s;
+}
+
+.ele:nth-of-type(29):after, .ele:nth-of-type(29):before {
+  -webkit-animation-delay: -16.57143s;
+          animation-delay: -16.57143s;
+}
+
+.ele:nth-of-type(29) {
+  -webkit-animation-delay: -16.57143s;
+          animation-delay: -16.57143s;
+}
+
+.ele:nth-of-type(30):after, .ele:nth-of-type(30):before {
+  -webkit-animation-delay: -17.14286s;
+          animation-delay: -17.14286s;
+}
+
+.ele:nth-of-type(30) {
+  -webkit-animation-delay: -17.14286s;
+          animation-delay: -17.14286s;
+}
+
+.ele:nth-of-type(31):after, .ele:nth-of-type(31):before {
+  -webkit-animation-delay: -17.71429s;
+          animation-delay: -17.71429s;
+}
+
+.ele:nth-of-type(31) {
+  -webkit-animation-delay: -17.71429s;
+          animation-delay: -17.71429s;
+}
+
+.ele:nth-of-type(32):after, .ele:nth-of-type(32):before {
+  -webkit-animation-delay: -18.28571s;
+          animation-delay: -18.28571s;
+}
+
+.ele:nth-of-type(32) {
+  -webkit-animation-delay: -18.28571s;
+          animation-delay: -18.28571s;
+}
+
+.ele:nth-of-type(33):after, .ele:nth-of-type(33):before {
+  -webkit-animation-delay: -18.85714s;
+          animation-delay: -18.85714s;
+}
+
+.ele:nth-of-type(33) {
+  -webkit-animation-delay: -18.85714s;
+          animation-delay: -18.85714s;
+}
+
+.ele:nth-of-type(34):after, .ele:nth-of-type(34):before {
+  -webkit-animation-delay: -19.42857s;
+          animation-delay: -19.42857s;
+}
+
+.ele:nth-of-type(34) {
+  -webkit-animation-delay: -19.42857s;
+          animation-delay: -19.42857s;
+  cursor: pointer;
+  -webkit-animation-delay: -18.85714s;
+          animation-delay: -18.85714s;
+}
+
+.ele:nth-of-type(34):before {
+  top: 13px;
+  left: -10px;
+  width: 20px;
+  -webkit-animation: none;
+          animation: none;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  margin: 0;
+  background: radial-gradient(circle at 10px 10px, white, #B8B8B8);
+}
+
+.ele:nth-of-type(34):after {
+  width: 0;
+  height: 0;
+}
+
+.ele:nth-of-type(34):nth-of-type(34) {
+  -webkit-animation: none;
+          animation: none;
+  width: 0;
+  height: 0;
+}
+
+.ele:nth-of-type(35):after, .ele:nth-of-type(35):before {
+  -webkit-animation-delay: -20s;
+          animation-delay: -20s;
+}
+
+.ele:nth-of-type(35) {
+  -webkit-animation-delay: -20s;
+          animation-delay: -20s;
+}
+
+.ele:nth-of-type(36):after, .ele:nth-of-type(36):before {
+  -webkit-animation-delay: -20.57143s;
+          animation-delay: -20.57143s;
+}
+
+.ele:nth-of-type(36) {
+  -webkit-animation-delay: -20.57143s;
+          animation-delay: -20.57143s;
+}
+
+.ele:nth-of-type(37):after, .ele:nth-of-type(37):before {
+  -webkit-animation-delay: -21.14286s;
+          animation-delay: -21.14286s;
+}
+
+.ele:nth-of-type(37) {
+  -webkit-animation-delay: -21.14286s;
+          animation-delay: -21.14286s;
+}
+
+.ele:nth-of-type(38):after, .ele:nth-of-type(38):before {
+  -webkit-animation-delay: -21.71429s;
+          animation-delay: -21.71429s;
+}
+
+.ele:nth-of-type(38) {
+  -webkit-animation-delay: -21.71429s;
+          animation-delay: -21.71429s;
+}
+
+.ele:nth-of-type(39):after, .ele:nth-of-type(39):before {
+  -webkit-animation-delay: -22.28571s;
+          animation-delay: -22.28571s;
+}
+
+.ele:nth-of-type(39) {
+  -webkit-animation-delay: -22.28571s;
+          animation-delay: -22.28571s;
+}
+
+.ele:nth-of-type(40):after, .ele:nth-of-type(40):before {
+  -webkit-animation-delay: -22.85714s;
+          animation-delay: -22.85714s;
+}
+
+.ele:nth-of-type(40) {
+  -webkit-animation-delay: -22.85714s;
+          animation-delay: -22.85714s;
+}
+
+.ele:nth-of-type(41):after, .ele:nth-of-type(41):before {
+  -webkit-animation-delay: -23.42857s;
+          animation-delay: -23.42857s;
+}
+
+.ele:nth-of-type(41) {
+  -webkit-animation-delay: -23.42857s;
+          animation-delay: -23.42857s;
+}
+
+.ele:nth-of-type(42):after, .ele:nth-of-type(42):before {
+  -webkit-animation-delay: -24s;
+          animation-delay: -24s;
+}
+
+.ele:nth-of-type(42) {
+  -webkit-animation-delay: -24s;
+          animation-delay: -24s;
+}
+
+.ele:nth-of-type(43):after, .ele:nth-of-type(43):before {
+  -webkit-animation-delay: -24.57143s;
+          animation-delay: -24.57143s;
+}
+
+.ele:nth-of-type(43) {
+  -webkit-animation-delay: -24.57143s;
+          animation-delay: -24.57143s;
+}
+
+.ele:nth-of-type(44):after, .ele:nth-of-type(44):before {
+  -webkit-animation-delay: -25.14286s;
+          animation-delay: -25.14286s;
+}
+
+.ele:nth-of-type(44) {
+  -webkit-animation-delay: -25.14286s;
+          animation-delay: -25.14286s;
+  cursor: pointer;
+  -webkit-animation-delay: -24.57143s;
+          animation-delay: -24.57143s;
+}
+
+.ele:nth-of-type(44):before {
+  top: 13px;
+  left: -10px;
+  width: 20px;
+  -webkit-animation: none;
+          animation: none;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  margin: 0;
+  background: radial-gradient(circle at 10px 10px, white, #B8B8B8);
+}
+
+.ele:nth-of-type(44):after {
+  width: 0;
+  height: 0;
+}
+
+.ele:nth-of-type(44):nth-of-type(44) {
+  -webkit-animation: none;
+          animation: none;
+  width: 0;
+  height: 0;
+}
+
+.ele:nth-of-type(45):after, .ele:nth-of-type(45):before {
+  -webkit-animation-delay: -25.71429s;
+          animation-delay: -25.71429s;
+}
+
+.ele:nth-of-type(45) {
+  -webkit-animation-delay: -25.71429s;
+          animation-delay: -25.71429s;
+}
+
+.ele:nth-of-type(46):after, .ele:nth-of-type(46):before {
+  -webkit-animation-delay: -26.28571s;
+          animation-delay: -26.28571s;
+}
+
+.ele:nth-of-type(46) {
+  -webkit-animation-delay: -26.28571s;
+          animation-delay: -26.28571s;
+}
+
+.ele:nth-of-type(47):after, .ele:nth-of-type(47):before {
+  -webkit-animation-delay: -26.85714s;
+          animation-delay: -26.85714s;
+}
+
+.ele:nth-of-type(47) {
+  -webkit-animation-delay: -26.85714s;
+          animation-delay: -26.85714s;
+}
+
+.ele:nth-of-type(48):after, .ele:nth-of-type(48):before {
+  -webkit-animation-delay: -27.42857s;
+          animation-delay: -27.42857s;
+}
+
+.ele:nth-of-type(48) {
+  -webkit-animation-delay: -27.42857s;
+          animation-delay: -27.42857s;
+}
+
+.ele:nth-of-type(49):after, .ele:nth-of-type(49):before {
+  -webkit-animation-delay: -28s;
+          animation-delay: -28s;
+}
+
+.ele:nth-of-type(49) {
+  -webkit-animation-delay: -28s;
+          animation-delay: -28s;
+}
+
+.ele:nth-of-type(50):after, .ele:nth-of-type(50):before {
+  -webkit-animation-delay: -28.57143s;
+          animation-delay: -28.57143s;
+}
+
+.ele:nth-of-type(50) {
+  -webkit-animation-delay: -28.57143s;
+          animation-delay: -28.57143s;
+}
+
+.ele:nth-of-type(51):after, .ele:nth-of-type(51):before {
+  -webkit-animation-delay: -29.14286s;
+          animation-delay: -29.14286s;
+}
+
+.ele:nth-of-type(51) {
+  -webkit-animation-delay: -29.14286s;
+          animation-delay: -29.14286s;
+}
+
+.ele:nth-of-type(52):after, .ele:nth-of-type(52):before {
+  -webkit-animation-delay: -29.71429s;
+          animation-delay: -29.71429s;
+}
+
+.ele:nth-of-type(52) {
+  -webkit-animation-delay: -29.71429s;
+          animation-delay: -29.71429s;
+}
+
+.ele:nth-of-type(53):after, .ele:nth-of-type(53):before {
+  -webkit-animation-delay: -30.28571s;
+          animation-delay: -30.28571s;
+}
+
+.ele:nth-of-type(53) {
+  -webkit-animation-delay: -30.28571s;
+          animation-delay: -30.28571s;
+}
+
+.ele:nth-of-type(54):after, .ele:nth-of-type(54):before {
+  -webkit-animation-delay: -30.85714s;
+          animation-delay: -30.85714s;
+}
+
+.ele:nth-of-type(54) {
+  -webkit-animation-delay: -30.85714s;
+          animation-delay: -30.85714s;
+  cursor: pointer;
+  -webkit-animation-delay: -30.28571s;
+          animation-delay: -30.28571s;
+}
+
+.ele:nth-of-type(54):before {
+  top: 13px;
+  left: -10px;
+  width: 20px;
+  -webkit-animation: none;
+          animation: none;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  margin: 0;
+  background: radial-gradient(circle at 10px 10px, white, #B8B8B8);
+}
+
+.ele:nth-of-type(54):after {
+  width: 0;
+  height: 0;
+}
+
+.ele:nth-of-type(54):nth-of-type(54) {
+  -webkit-animation: none;
+          animation: none;
+  width: 0;
+  height: 0;
+}
+
+.ele:nth-of-type(55):after, .ele:nth-of-type(55):before {
+  -webkit-animation-delay: -31.42857s;
+          animation-delay: -31.42857s;
+}
+
+.ele:nth-of-type(55) {
+  -webkit-animation-delay: -31.42857s;
+          animation-delay: -31.42857s;
+}
+
+.ele:nth-of-type(56):after, .ele:nth-of-type(56):before {
+  -webkit-animation-delay: -32s;
+          animation-delay: -32s;
+}
+
+.ele:nth-of-type(56) {
+  -webkit-animation-delay: -32s;
+          animation-delay: -32s;
+}
+
+.ele:nth-of-type(57):after, .ele:nth-of-type(57):before {
+  -webkit-animation-delay: -32.57143s;
+          animation-delay: -32.57143s;
+}
+
+.ele:nth-of-type(57) {
+  -webkit-animation-delay: -32.57143s;
+          animation-delay: -32.57143s;
+}
+
+.ele:nth-of-type(58):after, .ele:nth-of-type(58):before {
+  -webkit-animation-delay: -33.14286s;
+          animation-delay: -33.14286s;
+}
+
+.ele:nth-of-type(58) {
+  -webkit-animation-delay: -33.14286s;
+          animation-delay: -33.14286s;
+}
+
+.ele:nth-of-type(59):after, .ele:nth-of-type(59):before {
+  -webkit-animation-delay: -33.71429s;
+          animation-delay: -33.71429s;
+}
+
+.ele:nth-of-type(59) {
+  -webkit-animation-delay: -33.71429s;
+          animation-delay: -33.71429s;
+}
+
+.ele:nth-of-type(60):after, .ele:nth-of-type(60):before {
+  -webkit-animation-delay: -34.28571s;
+          animation-delay: -34.28571s;
+}
+
+.ele:nth-of-type(60) {
+  -webkit-animation-delay: -34.28571s;
+          animation-delay: -34.28571s;
+}
+
+.ele:nth-of-type(61):after, .ele:nth-of-type(61):before {
+  -webkit-animation-delay: -34.85714s;
+          animation-delay: -34.85714s;
+}
+
+.ele:nth-of-type(61) {
+  -webkit-animation-delay: -34.85714s;
+          animation-delay: -34.85714s;
+}
+
+.ele:nth-of-type(62):after, .ele:nth-of-type(62):before {
+  -webkit-animation-delay: -35.42857s;
+          animation-delay: -35.42857s;
+}
+
+.ele:nth-of-type(62) {
+  -webkit-animation-delay: -35.42857s;
+          animation-delay: -35.42857s;
+}
+
+.ele:nth-of-type(63):after, .ele:nth-of-type(63):before {
+  -webkit-animation-delay: -36s;
+          animation-delay: -36s;
+}
+
+.ele:nth-of-type(63) {
+  -webkit-animation-delay: -36s;
+          animation-delay: -36s;
+}
+
+.ele:nth-of-type(64):after, .ele:nth-of-type(64):before {
+  -webkit-animation-delay: -36.57143s;
+          animation-delay: -36.57143s;
+}
+
+.ele:nth-of-type(64) {
+  -webkit-animation-delay: -36.57143s;
+          animation-delay: -36.57143s;
+}
+
+.ele:nth-of-type(65):after, .ele:nth-of-type(65):before {
+  -webkit-animation-delay: -37.14286s;
+          animation-delay: -37.14286s;
+}
+
+.ele:nth-of-type(65) {
+  -webkit-animation-delay: -37.14286s;
+          animation-delay: -37.14286s;
+}
+
+.ele:nth-of-type(66):after, .ele:nth-of-type(66):before {
+  -webkit-animation-delay: -37.71429s;
+          animation-delay: -37.71429s;
+}
+
+.ele:nth-of-type(66) {
+  -webkit-animation-delay: -37.71429s;
+          animation-delay: -37.71429s;
+}
+
+.ele:nth-of-type(67):after, .ele:nth-of-type(67):before {
+  -webkit-animation-delay: -38.28571s;
+          animation-delay: -38.28571s;
+}
+
+.ele:nth-of-type(67) {
+  -webkit-animation-delay: -38.28571s;
+          animation-delay: -38.28571s;
+}
+
+.ele:nth-of-type(68):after, .ele:nth-of-type(68):before {
+  -webkit-animation-delay: -38.85714s;
+          animation-delay: -38.85714s;
+}
+
+.ele:nth-of-type(68) {
+  -webkit-animation-delay: -38.85714s;
+          animation-delay: -38.85714s;
+}
+
+.ele:nth-of-type(69):after, .ele:nth-of-type(69):before {
+  -webkit-animation-delay: -39.42857s;
+          animation-delay: -39.42857s;
+}
+
+.ele:nth-of-type(69) {
+  -webkit-animation-delay: -39.42857s;
+          animation-delay: -39.42857s;
+}
+
+.ele:nth-of-type(70):after, .ele:nth-of-type(70):before {
+  -webkit-animation-delay: -40s;
+          animation-delay: -40s;
+}
+
+.ele:nth-of-type(70) {
+  -webkit-animation-delay: -40s;
+          animation-delay: -40s;
+}
+
+@-webkit-keyframes run {
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes run {
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes run2 {
+  from {
+    -webkit-transform: translateX(-50%) rotateX(0deg);
+            transform: translateX(-50%) rotateX(0deg);
+  }
+  to {
+    -webkit-transform: translateX(-50%) rotateX(-360deg);
+            transform: translateX(-50%) rotateX(-360deg);
+  }
+}
+
+@keyframes run2 {
+  from {
+    -webkit-transform: translateX(-50%) rotateX(0deg);
+            transform: translateX(-50%) rotateX(0deg);
+  }
+  to {
+    -webkit-transform: translateX(-50%) rotateX(-360deg);
+            transform: translateX(-50%) rotateX(-360deg);
+  }
+}
+
+@-webkit-keyframes run3 {
+  0% {
+    background: radial-gradient(circle at 8px 55px, white, red);
+  }
+  0.5% {
+    background: radial-gradient(circle at 8px 54.5px, white, red);
+  }
+  1% {
+    background: radial-gradient(circle at 8px 54px, white, red);
+  }
+  1.5% {
+    background: radial-gradient(circle at 8px 53.5px, white, red);
+  }
+  2% {
+    background: radial-gradient(circle at 8px 53px, white, red);
+  }
+  2.5% {
+    background: radial-gradient(circle at 8px 52.5px, white, red);
+  }
+  3% {
+    background: radial-gradient(circle at 8px 52px, white, red);
+  }
+  3.5% {
+    background: radial-gradient(circle at 8px 51.5px, white, red);
+  }
+  4% {
+    background: radial-gradient(circle at 8px 51px, white, red);
+  }
+  4.5% {
+    background: radial-gradient(circle at 8px 50.5px, white, red);
+  }
+  5% {
+    background: radial-gradient(circle at 8px 50px, white, red);
+  }
+  5.5% {
+    background: radial-gradient(circle at 8px 49.5px, white, red);
+  }
+  6% {
+    background: radial-gradient(circle at 8px 49px, white, red);
+  }
+  6.5% {
+    background: radial-gradient(circle at 8px 48.5px, white, red);
+  }
+  7% {
+    background: radial-gradient(circle at 8px 48px, white, red);
+  }
+  7.5% {
+    background: radial-gradient(circle at 8px 47.5px, white, red);
+  }
+  8% {
+    background: radial-gradient(circle at 8px 47px, white, red);
+  }
+  8.5% {
+    background: radial-gradient(circle at 8px 46.5px, white, red);
+  }
+  9% {
+    background: radial-gradient(circle at 8px 46px, white, red);
+  }
+  9.5% {
+    background: radial-gradient(circle at 8px 45.5px, white, red);
+  }
+  10% {
+    background: radial-gradient(circle at 8px 45px, white, red);
+  }
+  10.5% {
+    background: radial-gradient(circle at 8px 44.5px, white, red);
+  }
+  11% {
+    background: radial-gradient(circle at 8px 44px, white, red);
+  }
+  11.5% {
+    background: radial-gradient(circle at 8px 43.5px, white, red);
+  }
+  12% {
+    background: radial-gradient(circle at 8px 43px, white, red);
+  }
+  12.5% {
+    background: radial-gradient(circle at 8px 42.5px, white, red);
+  }
+  13% {
+    background: radial-gradient(circle at 8px 42px, white, red);
+  }
+  13.5% {
+    background: radial-gradient(circle at 8px 41.5px, white, red);
+  }
+  14% {
+    background: radial-gradient(circle at 8px 41px, white, red);
+  }
+  14.5% {
+    background: radial-gradient(circle at 8px 40.5px, white, red);
+  }
+  15% {
+    background: radial-gradient(circle at 8px 40px, white, red);
+  }
+  15.5% {
+    background: radial-gradient(circle at 8px 39.5px, white, red);
+  }
+  16% {
+    background: radial-gradient(circle at 8px 39px, white, red);
+  }
+  16.5% {
+    background: radial-gradient(circle at 8px 38.5px, white, red);
+  }
+  17% {
+    background: radial-gradient(circle at 8px 38px, white, red);
+  }
+  17.5% {
+    background: radial-gradient(circle at 8px 37.5px, white, red);
+  }
+  18% {
+    background: radial-gradient(circle at 8px 37px, white, red);
+  }
+  18.5% {
+    background: radial-gradient(circle at 8px 36.5px, white, red);
+  }
+  19% {
+    background: radial-gradient(circle at 8px 36px, white, red);
+  }
+  19.5% {
+    background: radial-gradient(circle at 8px 35.5px, white, red);
+  }
+  20% {
+    background: radial-gradient(circle at 8px 35px, white, red);
+  }
+  20.5% {
+    background: radial-gradient(circle at 8px 34.5px, white, red);
+  }
+  21% {
+    background: radial-gradient(circle at 8px 34px, white, red);
+  }
+  21.5% {
+    background: radial-gradient(circle at 8px 33.5px, white, red);
+  }
+  22% {
+    background: radial-gradient(circle at 8px 33px, white, red);
+  }
+  22.5% {
+    background: radial-gradient(circle at 8px 32.5px, white, red);
+  }
+  23% {
+    background: radial-gradient(circle at 8px 32px, white, red);
+  }
+  23.5% {
+    background: radial-gradient(circle at 8px 31.5px, white, red);
+  }
+  24% {
+    background: radial-gradient(circle at 8px 31px, white, red);
+  }
+  24.5% {
+    background: radial-gradient(circle at 8px 30.5px, white, red);
+  }
+  25% {
+    background: radial-gradient(circle at 8px 30px, white, red);
+  }
+  25.5% {
+    background: radial-gradient(circle at 8px 29.5px, white, red);
+  }
+  26% {
+    background: radial-gradient(circle at 8px 29px, white, red);
+  }
+  26.5% {
+    background: radial-gradient(circle at 8px 28.5px, white, red);
+  }
+  27% {
+    background: radial-gradient(circle at 8px 28px, white, red);
+  }
+  27.5% {
+    background: radial-gradient(circle at 8px 27.5px, white, red);
+  }
+  28% {
+    background: radial-gradient(circle at 8px 27px, white, red);
+  }
+  28.5% {
+    background: radial-gradient(circle at 8px 26.5px, white, red);
+  }
+  29% {
+    background: radial-gradient(circle at 8px 26px, white, red);
+  }
+  29.5% {
+    background: radial-gradient(circle at 8px 25.5px, white, red);
+  }
+  30% {
+    background: radial-gradient(circle at 8px 25px, white, red);
+  }
+  30.5% {
+    background: radial-gradient(circle at 8px 24.5px, white, red);
+  }
+  31% {
+    background: radial-gradient(circle at 8px 24px, white, red);
+  }
+  31.5% {
+    background: radial-gradient(circle at 8px 23.5px, white, red);
+  }
+  32% {
+    background: radial-gradient(circle at 8px 23px, white, red);
+  }
+  32.5% {
+    background: radial-gradient(circle at 8px 22.5px, white, red);
+  }
+  33% {
+    background: radial-gradient(circle at 8px 22px, white, red);
+  }
+  33.5% {
+    background: radial-gradient(circle at 8px 21.5px, white, red);
+  }
+  34% {
+    background: radial-gradient(circle at 8px 21px, white, red);
+  }
+  34.5% {
+    background: radial-gradient(circle at 8px 20.5px, white, red);
+  }
+  35% {
+    background: radial-gradient(circle at 8px 20px, white, red);
+  }
+  35.5% {
+    background: radial-gradient(circle at 8px 19.5px, white, red);
+  }
+  36% {
+    background: radial-gradient(circle at 8px 19px, white, red);
+  }
+  36.5% {
+    background: radial-gradient(circle at 8px 18.5px, white, red);
+  }
+  37% {
+    background: radial-gradient(circle at 8px 18px, white, red);
+  }
+  37.5% {
+    background: radial-gradient(circle at 8px 17.5px, white, red);
+  }
+  38% {
+    background: radial-gradient(circle at 8px 17px, white, red);
+  }
+  38.5% {
+    background: radial-gradient(circle at 8px 16.5px, white, red);
+  }
+  39% {
+    background: radial-gradient(circle at 8px 16px, white, red);
+  }
+  39.5% {
+    background: radial-gradient(circle at 8px 15.5px, white, red);
+  }
+  40% {
+    background: radial-gradient(circle at 8px 15px, white, red);
+  }
+  40.5% {
+    background: radial-gradient(circle at 8px 14.5px, white, red);
+  }
+  41% {
+    background: radial-gradient(circle at 8px 14px, white, red);
+  }
+  41.5% {
+    background: radial-gradient(circle at 8px 13.5px, white, red);
+  }
+  42% {
+    background: radial-gradient(circle at 8px 13px, white, red);
+  }
+  42.5% {
+    background: radial-gradient(circle at 8px 12.5px, white, red);
+  }
+  43% {
+    background: radial-gradient(circle at 8px 12px, white, red);
+  }
+  43.5% {
+    background: radial-gradient(circle at 8px 11.5px, white, red);
+  }
+  44% {
+    background: radial-gradient(circle at 8px 11px, white, red);
+  }
+  44.5% {
+    background: radial-gradient(circle at 8px 10.5px, white, red);
+  }
+  45% {
+    background: radial-gradient(circle at 8px 10px, white, red);
+  }
+  45.5% {
+    background: radial-gradient(circle at 8px 9.5px, white, red);
+  }
+  46% {
+    background: radial-gradient(circle at 8px 9px, white, red);
+  }
+  46.5% {
+    background: radial-gradient(circle at 8px 8.5px, white, red);
+  }
+  47% {
+    background: radial-gradient(circle at 8px 8px, white, red);
+  }
+  47.5% {
+    background: radial-gradient(circle at 8px 7.5px, white, red);
+  }
+  48% {
+    background: radial-gradient(circle at 8px 7px, white, red);
+  }
+  48.5% {
+    background: radial-gradient(circle at 8px 6.5px, white, red);
+  }
+  49% {
+    background: radial-gradient(circle at 8px 6px, white, red);
+  }
+  49.5% {
+    background: radial-gradient(circle at 8px 5.5px, white, red);
+  }
+  50% {
+    background: radial-gradient(circle at 8px 5px, white, red);
+  }
+  50.5% {
+    background: radial-gradient(circle at 8px 1px, white, red);
+  }
+  51% {
+    background: radial-gradient(circle at 8px 1.5px, white, red);
+  }
+  51.5% {
+    background: radial-gradient(circle at 8px 2px, white, red);
+  }
+  52% {
+    background: radial-gradient(circle at 8px 2.5px, white, red);
+  }
+  52.5% {
+    background: radial-gradient(circle at 8px 3px, white, red);
+  }
+  53% {
+    background: radial-gradient(circle at 8px 3.5px, white, red);
+  }
+  53.5% {
+    background: radial-gradient(circle at 8px 4px, white, red);
+  }
+  54% {
+    background: radial-gradient(circle at 8px 4.5px, white, red);
+  }
+  54.5% {
+    background: radial-gradient(circle at 8px 5px, white, red);
+  }
+  55% {
+    background: radial-gradient(circle at 8px 5.5px, white, red);
+  }
+  55.5% {
+    background: radial-gradient(circle at 8px 6px, white, red);
+  }
+  56% {
+    background: radial-gradient(circle at 8px 6.5px, white, red);
+  }
+  56.5% {
+    background: radial-gradient(circle at 8px 7px, white, red);
+  }
+  57% {
+    background: radial-gradient(circle at 8px 7.5px, white, red);
+  }
+  57.5% {
+    background: radial-gradient(circle at 8px 8px, white, red);
+  }
+  58% {
+    background: radial-gradient(circle at 8px 8.5px, white, red);
+  }
+  58.5% {
+    background: radial-gradient(circle at 8px 9px, white, red);
+  }
+  59% {
+    background: radial-gradient(circle at 8px 9.5px, white, red);
+  }
+  59.5% {
+    background: radial-gradient(circle at 8px 10px, white, red);
+  }
+  60% {
+    background: radial-gradient(circle at 8px 10.5px, white, red);
+  }
+  60.5% {
+    background: radial-gradient(circle at 8px 11px, white, red);
+  }
+  61% {
+    background: radial-gradient(circle at 8px 11.5px, white, red);
+  }
+  61.5% {
+    background: radial-gradient(circle at 8px 12px, white, red);
+  }
+  62% {
+    background: radial-gradient(circle at 8px 12.5px, white, red);
+  }
+  62.5% {
+    background: radial-gradient(circle at 8px 13px, white, red);
+  }
+  63% {
+    background: radial-gradient(circle at 8px 13.5px, white, red);
+  }
+  63.5% {
+    background: radial-gradient(circle at 8px 14px, white, red);
+  }
+  64% {
+    background: radial-gradient(circle at 8px 14.5px, white, red);
+  }
+  64.5% {
+    background: radial-gradient(circle at 8px 15px, white, red);
+  }
+  65% {
+    background: radial-gradient(circle at 8px 15.5px, white, red);
+  }
+  65.5% {
+    background: radial-gradient(circle at 8px 16px, white, red);
+  }
+  66% {
+    background: radial-gradient(circle at 8px 16.5px, white, red);
+  }
+  66.5% {
+    background: radial-gradient(circle at 8px 17px, white, red);
+  }
+  67% {
+    background: radial-gradient(circle at 8px 17.5px, white, red);
+  }
+  67.5% {
+    background: radial-gradient(circle at 8px 18px, white, red);
+  }
+  68% {
+    background: radial-gradient(circle at 8px 18.5px, white, red);
+  }
+  68.5% {
+    background: radial-gradient(circle at 8px 19px, white, red);
+  }
+  69% {
+    background: radial-gradient(circle at 8px 19.5px, white, red);
+  }
+  69.5% {
+    background: radial-gradient(circle at 8px 20px, white, red);
+  }
+  70% {
+    background: radial-gradient(circle at 8px 20.5px, white, red);
+  }
+  70.5% {
+    background: radial-gradient(circle at 8px 21px, white, red);
+  }
+  71% {
+    background: radial-gradient(circle at 8px 21.5px, white, red);
+  }
+  71.5% {
+    background: radial-gradient(circle at 8px 22px, white, red);
+  }
+  72% {
+    background: radial-gradient(circle at 8px 22.5px, white, red);
+  }
+  72.5% {
+    background: radial-gradient(circle at 8px 23px, white, red);
+  }
+  73% {
+    background: radial-gradient(circle at 8px 23.5px, white, red);
+  }
+  73.5% {
+    background: radial-gradient(circle at 8px 24px, white, red);
+  }
+  74% {
+    background: radial-gradient(circle at 8px 24.5px, white, red);
+  }
+  74.5% {
+    background: radial-gradient(circle at 8px 25px, white, red);
+  }
+  75% {
+    background: radial-gradient(circle at 8px 25.5px, white, red);
+  }
+  75.5% {
+    background: radial-gradient(circle at 8px 26px, white, red);
+  }
+  76% {
+    background: radial-gradient(circle at 8px 26.5px, white, red);
+  }
+  76.5% {
+    background: radial-gradient(circle at 8px 27px, white, red);
+  }
+  77% {
+    background: radial-gradient(circle at 8px 27.5px, white, red);
+  }
+  77.5% {
+    background: radial-gradient(circle at 8px 28px, white, red);
+  }
+  78% {
+    background: radial-gradient(circle at 8px 28.5px, white, red);
+  }
+  78.5% {
+    background: radial-gradient(circle at 8px 29px, white, red);
+  }
+  79% {
+    background: radial-gradient(circle at 8px 29.5px, white, red);
+  }
+  79.5% {
+    background: radial-gradient(circle at 8px 30px, white, red);
+  }
+  80% {
+    background: radial-gradient(circle at 8px 30.5px, white, red);
+  }
+  80.5% {
+    background: radial-gradient(circle at 8px 31px, white, red);
+  }
+  81% {
+    background: radial-gradient(circle at 8px 31.5px, white, red);
+  }
+  81.5% {
+    background: radial-gradient(circle at 8px 32px, white, red);
+  }
+  82% {
+    background: radial-gradient(circle at 8px 32.5px, white, red);
+  }
+  82.5% {
+    background: radial-gradient(circle at 8px 33px, white, red);
+  }
+  83% {
+    background: radial-gradient(circle at 8px 33.5px, white, red);
+  }
+  83.5% {
+    background: radial-gradient(circle at 8px 34px, white, red);
+  }
+  84% {
+    background: radial-gradient(circle at 8px 34.5px, white, red);
+  }
+  84.5% {
+    background: radial-gradient(circle at 8px 35px, white, red);
+  }
+  85% {
+    background: radial-gradient(circle at 8px 35.5px, white, red);
+  }
+  85.5% {
+    background: radial-gradient(circle at 8px 36px, white, red);
+  }
+  86% {
+    background: radial-gradient(circle at 8px 36.5px, white, red);
+  }
+  86.5% {
+    background: radial-gradient(circle at 8px 37px, white, red);
+  }
+  87% {
+    background: radial-gradient(circle at 8px 37.5px, white, red);
+  }
+  87.5% {
+    background: radial-gradient(circle at 8px 38px, white, red);
+  }
+  88% {
+    background: radial-gradient(circle at 8px 38.5px, white, red);
+  }
+  88.5% {
+    background: radial-gradient(circle at 8px 39px, white, red);
+  }
+  89% {
+    background: radial-gradient(circle at 8px 39.5px, white, red);
+  }
+  89.5% {
+    background: radial-gradient(circle at 8px 40px, white, red);
+  }
+  90% {
+    background: radial-gradient(circle at 8px 40.5px, white, red);
+  }
+  90.5% {
+    background: radial-gradient(circle at 8px 41px, white, red);
+  }
+  91% {
+    background: radial-gradient(circle at 8px 41.5px, white, red);
+  }
+  91.5% {
+    background: radial-gradient(circle at 8px 42px, white, red);
+  }
+  92% {
+    background: radial-gradient(circle at 8px 42.5px, white, red);
+  }
+  92.5% {
+    background: radial-gradient(circle at 8px 43px, white, red);
+  }
+  93% {
+    background: radial-gradient(circle at 8px 43.5px, white, red);
+  }
+  93.5% {
+    background: radial-gradient(circle at 8px 44px, white, red);
+  }
+  94% {
+    background: radial-gradient(circle at 8px 44.5px, white, red);
+  }
+  94.5% {
+    background: radial-gradient(circle at 8px 45px, white, red);
+  }
+  95% {
+    background: radial-gradient(circle at 8px 45.5px, white, red);
+  }
+  95.5% {
+    background: radial-gradient(circle at 8px 46px, white, red);
+  }
+  96% {
+    background: radial-gradient(circle at 8px 46.5px, white, red);
+  }
+  96.5% {
+    background: radial-gradient(circle at 8px 47px, white, red);
+  }
+  97% {
+    background: radial-gradient(circle at 8px 47.5px, white, red);
+  }
+  97.5% {
+    background: radial-gradient(circle at 8px 48px, white, red);
+  }
+  98% {
+    background: radial-gradient(circle at 8px 48.5px, white, red);
+  }
+  98.5% {
+    background: radial-gradient(circle at 8px 49px, white, red);
+  }
+  99% {
+    background: radial-gradient(circle at 8px 49.5px, white, red);
+  }
+  99.5% {
+    background: radial-gradient(circle at 8px 50px, white, red);
+  }
+  100% {
+    background: radial-gradient(circle at 8px 50.5px, white, red);
+  }
+}
+
+@keyframes run3 {
+  0% {
+    background: radial-gradient(circle at 8px 55px, white, red);
+  }
+  0.5% {
+    background: radial-gradient(circle at 8px 54.5px, white, red);
+  }
+  1% {
+    background: radial-gradient(circle at 8px 54px, white, red);
+  }
+  1.5% {
+    background: radial-gradient(circle at 8px 53.5px, white, red);
+  }
+  2% {
+    background: radial-gradient(circle at 8px 53px, white, red);
+  }
+  2.5% {
+    background: radial-gradient(circle at 8px 52.5px, white, red);
+  }
+  3% {
+    background: radial-gradient(circle at 8px 52px, white, red);
+  }
+  3.5% {
+    background: radial-gradient(circle at 8px 51.5px, white, red);
+  }
+  4% {
+    background: radial-gradient(circle at 8px 51px, white, red);
+  }
+  4.5% {
+    background: radial-gradient(circle at 8px 50.5px, white, red);
+  }
+  5% {
+    background: radial-gradient(circle at 8px 50px, white, red);
+  }
+  5.5% {
+    background: radial-gradient(circle at 8px 49.5px, white, red);
+  }
+  6% {
+    background: radial-gradient(circle at 8px 49px, white, red);
+  }
+  6.5% {
+    background: radial-gradient(circle at 8px 48.5px, white, red);
+  }
+  7% {
+    background: radial-gradient(circle at 8px 48px, white, red);
+  }
+  7.5% {
+    background: radial-gradient(circle at 8px 47.5px, white, red);
+  }
+  8% {
+    background: radial-gradient(circle at 8px 47px, white, red);
+  }
+  8.5% {
+    background: radial-gradient(circle at 8px 46.5px, white, red);
+  }
+  9% {
+    background: radial-gradient(circle at 8px 46px, white, red);
+  }
+  9.5% {
+    background: radial-gradient(circle at 8px 45.5px, white, red);
+  }
+  10% {
+    background: radial-gradient(circle at 8px 45px, white, red);
+  }
+  10.5% {
+    background: radial-gradient(circle at 8px 44.5px, white, red);
+  }
+  11% {
+    background: radial-gradient(circle at 8px 44px, white, red);
+  }
+  11.5% {
+    background: radial-gradient(circle at 8px 43.5px, white, red);
+  }
+  12% {
+    background: radial-gradient(circle at 8px 43px, white, red);
+  }
+  12.5% {
+    background: radial-gradient(circle at 8px 42.5px, white, red);
+  }
+  13% {
+    background: radial-gradient(circle at 8px 42px, white, red);
+  }
+  13.5% {
+    background: radial-gradient(circle at 8px 41.5px, white, red);
+  }
+  14% {
+    background: radial-gradient(circle at 8px 41px, white, red);
+  }
+  14.5% {
+    background: radial-gradient(circle at 8px 40.5px, white, red);
+  }
+  15% {
+    background: radial-gradient(circle at 8px 40px, white, red);
+  }
+  15.5% {
+    background: radial-gradient(circle at 8px 39.5px, white, red);
+  }
+  16% {
+    background: radial-gradient(circle at 8px 39px, white, red);
+  }
+  16.5% {
+    background: radial-gradient(circle at 8px 38.5px, white, red);
+  }
+  17% {
+    background: radial-gradient(circle at 8px 38px, white, red);
+  }
+  17.5% {
+    background: radial-gradient(circle at 8px 37.5px, white, red);
+  }
+  18% {
+    background: radial-gradient(circle at 8px 37px, white, red);
+  }
+  18.5% {
+    background: radial-gradient(circle at 8px 36.5px, white, red);
+  }
+  19% {
+    background: radial-gradient(circle at 8px 36px, white, red);
+  }
+  19.5% {
+    background: radial-gradient(circle at 8px 35.5px, white, red);
+  }
+  20% {
+    background: radial-gradient(circle at 8px 35px, white, red);
+  }
+  20.5% {
+    background: radial-gradient(circle at 8px 34.5px, white, red);
+  }
+  21% {
+    background: radial-gradient(circle at 8px 34px, white, red);
+  }
+  21.5% {
+    background: radial-gradient(circle at 8px 33.5px, white, red);
+  }
+  22% {
+    background: radial-gradient(circle at 8px 33px, white, red);
+  }
+  22.5% {
+    background: radial-gradient(circle at 8px 32.5px, white, red);
+  }
+  23% {
+    background: radial-gradient(circle at 8px 32px, white, red);
+  }
+  23.5% {
+    background: radial-gradient(circle at 8px 31.5px, white, red);
+  }
+  24% {
+    background: radial-gradient(circle at 8px 31px, white, red);
+  }
+  24.5% {
+    background: radial-gradient(circle at 8px 30.5px, white, red);
+  }
+  25% {
+    background: radial-gradient(circle at 8px 30px, white, red);
+  }
+  25.5% {
+    background: radial-gradient(circle at 8px 29.5px, white, red);
+  }
+  26% {
+    background: radial-gradient(circle at 8px 29px, white, red);
+  }
+  26.5% {
+    background: radial-gradient(circle at 8px 28.5px, white, red);
+  }
+  27% {
+    background: radial-gradient(circle at 8px 28px, white, red);
+  }
+  27.5% {
+    background: radial-gradient(circle at 8px 27.5px, white, red);
+  }
+  28% {
+    background: radial-gradient(circle at 8px 27px, white, red);
+  }
+  28.5% {
+    background: radial-gradient(circle at 8px 26.5px, white, red);
+  }
+  29% {
+    background: radial-gradient(circle at 8px 26px, white, red);
+  }
+  29.5% {
+    background: radial-gradient(circle at 8px 25.5px, white, red);
+  }
+  30% {
+    background: radial-gradient(circle at 8px 25px, white, red);
+  }
+  30.5% {
+    background: radial-gradient(circle at 8px 24.5px, white, red);
+  }
+  31% {
+    background: radial-gradient(circle at 8px 24px, white, red);
+  }
+  31.5% {
+    background: radial-gradient(circle at 8px 23.5px, white, red);
+  }
+  32% {
+    background: radial-gradient(circle at 8px 23px, white, red);
+  }
+  32.5% {
+    background: radial-gradient(circle at 8px 22.5px, white, red);
+  }
+  33% {
+    background: radial-gradient(circle at 8px 22px, white, red);
+  }
+  33.5% {
+    background: radial-gradient(circle at 8px 21.5px, white, red);
+  }
+  34% {
+    background: radial-gradient(circle at 8px 21px, white, red);
+  }
+  34.5% {
+    background: radial-gradient(circle at 8px 20.5px, white, red);
+  }
+  35% {
+    background: radial-gradient(circle at 8px 20px, white, red);
+  }
+  35.5% {
+    background: radial-gradient(circle at 8px 19.5px, white, red);
+  }
+  36% {
+    background: radial-gradient(circle at 8px 19px, white, red);
+  }
+  36.5% {
+    background: radial-gradient(circle at 8px 18.5px, white, red);
+  }
+  37% {
+    background: radial-gradient(circle at 8px 18px, white, red);
+  }
+  37.5% {
+    background: radial-gradient(circle at 8px 17.5px, white, red);
+  }
+  38% {
+    background: radial-gradient(circle at 8px 17px, white, red);
+  }
+  38.5% {
+    background: radial-gradient(circle at 8px 16.5px, white, red);
+  }
+  39% {
+    background: radial-gradient(circle at 8px 16px, white, red);
+  }
+  39.5% {
+    background: radial-gradient(circle at 8px 15.5px, white, red);
+  }
+  40% {
+    background: radial-gradient(circle at 8px 15px, white, red);
+  }
+  40.5% {
+    background: radial-gradient(circle at 8px 14.5px, white, red);
+  }
+  41% {
+    background: radial-gradient(circle at 8px 14px, white, red);
+  }
+  41.5% {
+    background: radial-gradient(circle at 8px 13.5px, white, red);
+  }
+  42% {
+    background: radial-gradient(circle at 8px 13px, white, red);
+  }
+  42.5% {
+    background: radial-gradient(circle at 8px 12.5px, white, red);
+  }
+  43% {
+    background: radial-gradient(circle at 8px 12px, white, red);
+  }
+  43.5% {
+    background: radial-gradient(circle at 8px 11.5px, white, red);
+  }
+  44% {
+    background: radial-gradient(circle at 8px 11px, white, red);
+  }
+  44.5% {
+    background: radial-gradient(circle at 8px 10.5px, white, red);
+  }
+  45% {
+    background: radial-gradient(circle at 8px 10px, white, red);
+  }
+  45.5% {
+    background: radial-gradient(circle at 8px 9.5px, white, red);
+  }
+  46% {
+    background: radial-gradient(circle at 8px 9px, white, red);
+  }
+  46.5% {
+    background: radial-gradient(circle at 8px 8.5px, white, red);
+  }
+  47% {
+    background: radial-gradient(circle at 8px 8px, white, red);
+  }
+  47.5% {
+    background: radial-gradient(circle at 8px 7.5px, white, red);
+  }
+  48% {
+    background: radial-gradient(circle at 8px 7px, white, red);
+  }
+  48.5% {
+    background: radial-gradient(circle at 8px 6.5px, white, red);
+  }
+  49% {
+    background: radial-gradient(circle at 8px 6px, white, red);
+  }
+  49.5% {
+    background: radial-gradient(circle at 8px 5.5px, white, red);
+  }
+  50% {
+    background: radial-gradient(circle at 8px 5px, white, red);
+  }
+  50.5% {
+    background: radial-gradient(circle at 8px 1px, white, red);
+  }
+  51% {
+    background: radial-gradient(circle at 8px 1.5px, white, red);
+  }
+  51.5% {
+    background: radial-gradient(circle at 8px 2px, white, red);
+  }
+  52% {
+    background: radial-gradient(circle at 8px 2.5px, white, red);
+  }
+  52.5% {
+    background: radial-gradient(circle at 8px 3px, white, red);
+  }
+  53% {
+    background: radial-gradient(circle at 8px 3.5px, white, red);
+  }
+  53.5% {
+    background: radial-gradient(circle at 8px 4px, white, red);
+  }
+  54% {
+    background: radial-gradient(circle at 8px 4.5px, white, red);
+  }
+  54.5% {
+    background: radial-gradient(circle at 8px 5px, white, red);
+  }
+  55% {
+    background: radial-gradient(circle at 8px 5.5px, white, red);
+  }
+  55.5% {
+    background: radial-gradient(circle at 8px 6px, white, red);
+  }
+  56% {
+    background: radial-gradient(circle at 8px 6.5px, white, red);
+  }
+  56.5% {
+    background: radial-gradient(circle at 8px 7px, white, red);
+  }
+  57% {
+    background: radial-gradient(circle at 8px 7.5px, white, red);
+  }
+  57.5% {
+    background: radial-gradient(circle at 8px 8px, white, red);
+  }
+  58% {
+    background: radial-gradient(circle at 8px 8.5px, white, red);
+  }
+  58.5% {
+    background: radial-gradient(circle at 8px 9px, white, red);
+  }
+  59% {
+    background: radial-gradient(circle at 8px 9.5px, white, red);
+  }
+  59.5% {
+    background: radial-gradient(circle at 8px 10px, white, red);
+  }
+  60% {
+    background: radial-gradient(circle at 8px 10.5px, white, red);
+  }
+  60.5% {
+    background: radial-gradient(circle at 8px 11px, white, red);
+  }
+  61% {
+    background: radial-gradient(circle at 8px 11.5px, white, red);
+  }
+  61.5% {
+    background: radial-gradient(circle at 8px 12px, white, red);
+  }
+  62% {
+    background: radial-gradient(circle at 8px 12.5px, white, red);
+  }
+  62.5% {
+    background: radial-gradient(circle at 8px 13px, white, red);
+  }
+  63% {
+    background: radial-gradient(circle at 8px 13.5px, white, red);
+  }
+  63.5% {
+    background: radial-gradient(circle at 8px 14px, white, red);
+  }
+  64% {
+    background: radial-gradient(circle at 8px 14.5px, white, red);
+  }
+  64.5% {
+    background: radial-gradient(circle at 8px 15px, white, red);
+  }
+  65% {
+    background: radial-gradient(circle at 8px 15.5px, white, red);
+  }
+  65.5% {
+    background: radial-gradient(circle at 8px 16px, white, red);
+  }
+  66% {
+    background: radial-gradient(circle at 8px 16.5px, white, red);
+  }
+  66.5% {
+    background: radial-gradient(circle at 8px 17px, white, red);
+  }
+  67% {
+    background: radial-gradient(circle at 8px 17.5px, white, red);
+  }
+  67.5% {
+    background: radial-gradient(circle at 8px 18px, white, red);
+  }
+  68% {
+    background: radial-gradient(circle at 8px 18.5px, white, red);
+  }
+  68.5% {
+    background: radial-gradient(circle at 8px 19px, white, red);
+  }
+  69% {
+    background: radial-gradient(circle at 8px 19.5px, white, red);
+  }
+  69.5% {
+    background: radial-gradient(circle at 8px 20px, white, red);
+  }
+  70% {
+    background: radial-gradient(circle at 8px 20.5px, white, red);
+  }
+  70.5% {
+    background: radial-gradient(circle at 8px 21px, white, red);
+  }
+  71% {
+    background: radial-gradient(circle at 8px 21.5px, white, red);
+  }
+  71.5% {
+    background: radial-gradient(circle at 8px 22px, white, red);
+  }
+  72% {
+    background: radial-gradient(circle at 8px 22.5px, white, red);
+  }
+  72.5% {
+    background: radial-gradient(circle at 8px 23px, white, red);
+  }
+  73% {
+    background: radial-gradient(circle at 8px 23.5px, white, red);
+  }
+  73.5% {
+    background: radial-gradient(circle at 8px 24px, white, red);
+  }
+  74% {
+    background: radial-gradient(circle at 8px 24.5px, white, red);
+  }
+  74.5% {
+    background: radial-gradient(circle at 8px 25px, white, red);
+  }
+  75% {
+    background: radial-gradient(circle at 8px 25.5px, white, red);
+  }
+  75.5% {
+    background: radial-gradient(circle at 8px 26px, white, red);
+  }
+  76% {
+    background: radial-gradient(circle at 8px 26.5px, white, red);
+  }
+  76.5% {
+    background: radial-gradient(circle at 8px 27px, white, red);
+  }
+  77% {
+    background: radial-gradient(circle at 8px 27.5px, white, red);
+  }
+  77.5% {
+    background: radial-gradient(circle at 8px 28px, white, red);
+  }
+  78% {
+    background: radial-gradient(circle at 8px 28.5px, white, red);
+  }
+  78.5% {
+    background: radial-gradient(circle at 8px 29px, white, red);
+  }
+  79% {
+    background: radial-gradient(circle at 8px 29.5px, white, red);
+  }
+  79.5% {
+    background: radial-gradient(circle at 8px 30px, white, red);
+  }
+  80% {
+    background: radial-gradient(circle at 8px 30.5px, white, red);
+  }
+  80.5% {
+    background: radial-gradient(circle at 8px 31px, white, red);
+  }
+  81% {
+    background: radial-gradient(circle at 8px 31.5px, white, red);
+  }
+  81.5% {
+    background: radial-gradient(circle at 8px 32px, white, red);
+  }
+  82% {
+    background: radial-gradient(circle at 8px 32.5px, white, red);
+  }
+  82.5% {
+    background: radial-gradient(circle at 8px 33px, white, red);
+  }
+  83% {
+    background: radial-gradient(circle at 8px 33.5px, white, red);
+  }
+  83.5% {
+    background: radial-gradient(circle at 8px 34px, white, red);
+  }
+  84% {
+    background: radial-gradient(circle at 8px 34.5px, white, red);
+  }
+  84.5% {
+    background: radial-gradient(circle at 8px 35px, white, red);
+  }
+  85% {
+    background: radial-gradient(circle at 8px 35.5px, white, red);
+  }
+  85.5% {
+    background: radial-gradient(circle at 8px 36px, white, red);
+  }
+  86% {
+    background: radial-gradient(circle at 8px 36.5px, white, red);
+  }
+  86.5% {
+    background: radial-gradient(circle at 8px 37px, white, red);
+  }
+  87% {
+    background: radial-gradient(circle at 8px 37.5px, white, red);
+  }
+  87.5% {
+    background: radial-gradient(circle at 8px 38px, white, red);
+  }
+  88% {
+    background: radial-gradient(circle at 8px 38.5px, white, red);
+  }
+  88.5% {
+    background: radial-gradient(circle at 8px 39px, white, red);
+  }
+  89% {
+    background: radial-gradient(circle at 8px 39.5px, white, red);
+  }
+  89.5% {
+    background: radial-gradient(circle at 8px 40px, white, red);
+  }
+  90% {
+    background: radial-gradient(circle at 8px 40.5px, white, red);
+  }
+  90.5% {
+    background: radial-gradient(circle at 8px 41px, white, red);
+  }
+  91% {
+    background: radial-gradient(circle at 8px 41.5px, white, red);
+  }
+  91.5% {
+    background: radial-gradient(circle at 8px 42px, white, red);
+  }
+  92% {
+    background: radial-gradient(circle at 8px 42.5px, white, red);
+  }
+  92.5% {
+    background: radial-gradient(circle at 8px 43px, white, red);
+  }
+  93% {
+    background: radial-gradient(circle at 8px 43.5px, white, red);
+  }
+  93.5% {
+    background: radial-gradient(circle at 8px 44px, white, red);
+  }
+  94% {
+    background: radial-gradient(circle at 8px 44.5px, white, red);
+  }
+  94.5% {
+    background: radial-gradient(circle at 8px 45px, white, red);
+  }
+  95% {
+    background: radial-gradient(circle at 8px 45.5px, white, red);
+  }
+  95.5% {
+    background: radial-gradient(circle at 8px 46px, white, red);
+  }
+  96% {
+    background: radial-gradient(circle at 8px 46.5px, white, red);
+  }
+  96.5% {
+    background: radial-gradient(circle at 8px 47px, white, red);
+  }
+  97% {
+    background: radial-gradient(circle at 8px 47.5px, white, red);
+  }
+  97.5% {
+    background: radial-gradient(circle at 8px 48px, white, red);
+  }
+  98% {
+    background: radial-gradient(circle at 8px 48.5px, white, red);
+  }
+  98.5% {
+    background: radial-gradient(circle at 8px 49px, white, red);
+  }
+  99% {
+    background: radial-gradient(circle at 8px 49.5px, white, red);
+  }
+  99.5% {
+    background: radial-gradient(circle at 8px 50px, white, red);
+  }
+  100% {
+    background: radial-gradient(circle at 8px 50.5px, white, red);
+  }
+}
+/*# sourceMappingURL=style.css.map */
